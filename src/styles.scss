@@ -5,7 +5,10 @@
 }
 
 @import "./scss/variables";
+
+// Components
 @import "./scss/components/buttons";
+@import "./scss/components/cards";
 
 .section-title {
   text-transform: uppercase;

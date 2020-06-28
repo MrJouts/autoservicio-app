@@ -1,0 +1,16 @@
+header {
+  background: transparent url(/assets/banner2.png) no-repeat center center;
+  background-size: cover;
+  padding: 1rem 2rem;
+
+  img {
+    width: 100px;
+  }
+}
+
+nav {
+  margin-top: -1%;
+  background: transparent url(/assets/barra.png) no-repeat center bottom;
+  background-size: contain;
+  min-height: 160px;
+}
