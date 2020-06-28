@@ -5,7 +5,11 @@
 }
 
 @import "./scss/variables";
+@import "./scss/components/buttons";
 
-.btn {
-  // color: $primary;
+.section-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 2.5rem 0 0.75rem;
 }
