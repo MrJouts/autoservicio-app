@@ -7,9 +7,9 @@
     <h1 class="section-title">Elige una opción</h1>
     <div class="row">
       <div class="col col-lg-3" *ngFor="let categoria of categorias">
-        <div class="card" routerLink="/productos">
+        <div class="card card-producto" routerLink="/productos">
           <img class="img-fluid" src="assets/{{categoria.img}}" alt="">
-          <h2>{{categoria.name}}</h2>
+          <h2 class="product-title">{{categoria.name}}</h2>
         </div>
       </div>
     </div>
@@ -17,7 +17,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <div class="buttons">
+        <div class="buttons-nav">
           <div class="btn btn-success" routerLink="/productos">Pagar</div>
           <div class="btn btn-danger" routerLink="/">Cancelar Orden</div>
         </div>

@@ -1,0 +1,67 @@
+section {
+  padding: 2rem 0;
+  min-height: 100vh;
+  background: rgb(57, 112, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(57, 112, 202, 1) 0%,
+    rgba(75, 151, 208, 1) 100%
+  );
+}
+
+.row {
+  justify-content: center;
+}
+
+.card {
+  padding: 1rem 3.5rem;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.card-price {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+// Detalle de la compra
+.card-detalle {
+  flex-direction: row;
+  justify-content: space-between;
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .btn:first-child {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Formulario de la compra
+.card-pago {
+  .card-title {
+    margin-bottom: 2rem;
+  }
+
+  .medios-de-pago {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img:first-child {
+      width: 20%;
+    }
+
+    img:last-child {
+      width: 75%;
+    }
+  }
+}

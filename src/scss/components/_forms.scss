@@ -1,0 +1,37 @@
+.form-group {
+  label {
+    font-weight: 500;
+    margin-bottom: 0.1rem;
+  }
+
+  input {
+    border-radius: 0;
+    background-color: #f8f8f8;
+  }
+}
+
+.form-group-fecha {
+  input {
+    max-width: 200px;
+  }
+
+  .inputs {
+    display: flex;
+
+    input:first-child {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.form-group-codigo {
+  input {
+    max-width: 100px;
+  }
+
+  input[disbaled] {
+    opacity: 0.7;
+  }
+
+
+}
