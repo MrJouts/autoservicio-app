@@ -3,10 +3,8 @@
 section {
   height: 100vh;
   background: transparent no-repeat center center;
-  background-image: url(../../../assets/portada.png),
-    linear-gradient(90deg, #3970ca 50%, #4b97d0 50%);
-  background-size: contain;
-  // padding: 2rem;
+  background-image: url(../../../assets/portada-mobile.png);
+  background-size: cover;
   position: relative;
 }
 
@@ -16,11 +14,25 @@ div {
   left: 0;
   right: 0;
   text-align: center;
-  padding-bottom: 2rem;
+  padding: 15px;
+  padding-bottom: 30%;
 }
 
 .btn {
   text-transform: uppercase;
   background-color: $cta-button-color;
   border: $cta-button-color;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  section {
+    background-image: url(../../../assets/portada.png),
+      linear-gradient(90deg, #3970ca 50%, #4b97d0 50%);
+    background-size: contain;
+  }
+
+  div {
+    padding-bottom: 2rem;
+  }
 }

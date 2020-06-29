@@ -1,14 +1,31 @@
 .btn {
   min-width: 180px;
+  width: 100%;
 }
 
 .buttons-nav {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
 
   .btn:first-child {
-    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .btn {
+    width: auto;
+  }
+
+  .buttons-nav {
+    flex-direction: row;
+
+    .btn:first-child {
+      margin-bottom: 0;
+      margin-right: 2rem;
+    }
   }
 }

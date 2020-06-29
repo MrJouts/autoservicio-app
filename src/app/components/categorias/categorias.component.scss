@@ -1,9 +1,19 @@
 header {
-  background: transparent url(/assets/banner1.png) no-repeat center center;
+  background: transparent url(/assets/baner-mobile1.png) no-repeat center center;
   background-size: cover;
   padding: 1rem 2rem;
 
   img {
-    width: 100px;
+    width: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    background: transparent url(/assets/banner1.png) no-repeat center center;
+    
+    img {
+      width: 100px;
+    }
   }
 }

@@ -1,5 +1,5 @@
 section {
-  padding: 2rem 0;
+  padding: 8rem 0 2rem;
   min-height: 100vh;
   background: rgb(57, 112, 202);
   background: linear-gradient(
@@ -14,7 +14,7 @@ section {
 }
 
 .card {
-  padding: 1rem 3.5rem;
+  padding: 1rem;
 }
 
 .card-title {
@@ -30,8 +30,24 @@ section {
 
 // Detalle de la compra
 .card-detalle {
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+
+  .detalle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    .card-title {
+      margin-right: 0.5rem;
+    }
+
+    .card-title,
+    span {
+      font-size: 20px;
+    }
+  }
 
   .buttons {
     display: flex;
@@ -47,21 +63,85 @@ section {
 // Formulario de la compra
 .card-pago {
   .card-title {
+    text-align: center;
     margin-bottom: 2rem;
   }
 
   .medios-de-pago {
     margin-bottom: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
     img:first-child {
-      width: 20%;
+      width: 30%;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-detalle {
+    .buttons {
+      flex-direction: row;
+      align-items: center;
+
+      .btn:first-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .card {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 2rem 0;
+  }
+
+  // Detalle de la compra
+  .card-detalle {
+    flex-direction: row;
+
+    .detalle-wrapper {
+      display: block;
+      margin-bottom: 0;
+
+      .card-title {
+        margin-right: 0;
+      }
+    }
+  }
+
+  // Formulario de la compra
+  .card-pago {
+    .card-title {
+      margin-bottom: 2rem;
     }
 
-    img:last-child {
-      width: 75%;
+    .medios-de-pago {
+      flex-direction: row;
+
+      img:first-child {
+        width: 20%;
+        margin-bottom: 0;
+      }
+
+      img:last-child {
+        width: 75%;
+      }
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    padding: 1rem 3.5rem;
   }
 }

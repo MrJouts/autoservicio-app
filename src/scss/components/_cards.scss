@@ -5,19 +5,58 @@
 }
 
 .card-producto {
+  min-height: 45vw;
   cursor: pointer;
   align-items: center;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
   &:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18), 0 5px 10px rgba(0, 0, 0, 0.22);
   }
 
   .product-title {
-    font-size: 18px;
+    font-size: 15px;
     text-transform: uppercase;
     position: absolute;
-    bottom: 10px;
+    bottom: 3%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .col-6:nth-child(odd) {
+    padding-right: calc(15px / 2);
+  }
+
+  .col-6:nth-child(even) {
+    padding-left: calc(15px / 2);
+  }
+}
+
+@media (min-width: 576px) {
+  .card-producto {
+    min-height: 238px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-producto {
+    min-height: 330px;
+    .product-title {
+      font-size: 18px;
+      bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .card-producto {
+    min-height: 210px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-producto {
+    min-height: 254px;
   }
 }

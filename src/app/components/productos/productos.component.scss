@@ -1,15 +1,31 @@
 header {
-  background: transparent url(/assets/banner2.png) no-repeat center center;
+  background: transparent url(/assets/baner-mobile2.png) no-repeat center center;
   background-size: cover;
   padding: 1rem 2rem;
 
   img {
-    width: 100px;
+    width: 80px;
   }
 }
 
 nav {
-  background: transparent url(/assets/barra.png) no-repeat center bottom;
+  background: transparent url(/assets/barra-mobile.png) no-repeat center bottom;
   background-size: contain;
-  min-height: 11vw;
+  min-height: 20vw;
+}
+
+@media (min-width: 768px) {
+  header {
+    background: transparent url(/assets/banner2.png) no-repeat center center;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  nav {
+    background: transparent url(/assets/barra.png) no-repeat center bottom;
+    background-size: contain;
+    min-height: 11vw;
+  }
 }
