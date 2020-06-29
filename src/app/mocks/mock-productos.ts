@@ -14,7 +14,7 @@ export const PRODUCTOS: Producto[] = [
   {
     id: 3,
     name: "Bañado",
-    img: "bañado.png",
+    img: "banado.png",
   },
   {
     id: 4,
