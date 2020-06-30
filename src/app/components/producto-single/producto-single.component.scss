@@ -1,0 +1,27 @@
+header {
+  background: transparent url(/assets/baner-mobile2.png) no-repeat center center;
+  background-size: cover;
+  padding: 1rem 2rem;
+
+  img {
+    width: 80px;
+  }
+}
+
+.row-producto {
+  justify-content: center;
+}
+
+.producto-imagenes {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  header {
+    background: transparent url(/assets/banner2.png) no-repeat center center;
+
+    img {
+      width: 100px;
+    }
+  }
+}

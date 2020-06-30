@@ -1,4 +1,36 @@
-<p>producto-single works!</p>
+<header>
+  <img src="assets/logo.png" alt="">
+</header>
 
-<a routerLink="/productos">Volver</a>
-<a routerLink="/">Cancelar</a>
+<section>
+  <div class="container">
+    <div class="row row-prodcuto">
+      <div class="col-12 col-md-5 col-lg-4">
+        <img class="img-fluid" src="assets/{{producto.portada}}" alt="{{producto.name}}">
+      </div>
+      <div class="col-12 col-md-7 col-lg-6">
+        <h1 class="section-title">{{producto.name}}</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem rem vel doloribus, libero nobis!
+          Perferendis magnam enim quia nemo sapiente numquam labore qui accusantium error, nostrum autem est incidunt.
+        </p>
+        <div class="producto-imagenes">
+          <span *ngFor="let imagen of producto.imagenes">
+            <img class="img-fluid" src="assets/{{imagen}}" alt="">
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="buttons-nav">
+          <div class="btn btn-success" routerLink="/checkout">Pagar</div>
+          <div class="btn btn-danger" routerLink="/productos">Cancelar Orden</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

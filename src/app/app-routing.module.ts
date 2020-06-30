@@ -20,7 +20,7 @@ const routes: Routes = [
     component: ProductosComponent,
   },
   {
-    path: "producto-single",
+    path: "producto/:id",
     component: ProductoSingleComponent,
   },
   {
